@@ -1,5 +1,1401 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaurav's Portfolio</title>
-  <head>Gaurav's Portfolio</head>
-  <body><h2>Welcome To My Portfolio!</h2></body>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/Portfolio.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!--<img src="./assets/images/my-avatar.png" alt="Gaurav Sharma" width="80">-->
+          <img src="./assets/images/my-pic.png" alt="Gaurav Sharma" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Gaurav Sharma">Gaurav Sharma</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Gmail</p>
+
+              <a href="mailto:sharmagaurav.sde@gmail.com" class="contact-link">sharmagaurav.sde</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919223326583" class="contact-link">+91-9223326583</a>
+            </div>
+
+          </li> -->
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="laptop-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Current Role</p>
+
+              <p class="contact-link">Technical Analyst</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Current Company</p>
+
+              <p class="contact-link">Coforge Ltd.</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Years Of Experience</p>
+
+              <time datetime="2020-07-21">3.85+</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gurugram, HR, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/grv-shrm/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/grvshrm" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+<!--
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+-->
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>  -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Software Engineer with 3.8+ years of IT experience, currently working as a Technical Analyst in the Data Science team at Coforge Ltd.
+            I am passionate about developing innovative solutions that expedite organizational success by augmenting the efficacy and effectiveness of products. 
+          </p>
+
+          <p>
+            I possess good experience in data preprocessing, EDA, feature engineering and model training/evaluation 
+            and am well-versed in technology and writing code to develop reliable and efficient software solutions using Python. 
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Data Science icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  Taking care of the end to end life cycle right from Planning & Data Preparation to Deployment & Maintenance.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Software Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  Development of high-quality Software solutions and APIs according to business needs.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Testing icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Testing</h4>
+
+                <p class="service-item-text">
+                  Performing rigorous testing of the solutions to minimize incidents.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Learning icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Learning</h4>
+
+                <p class="service-item-text">
+                  Always on the lookout to learn more and expand on my knowledge.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Awards</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/silver medal.svg" alt="Silver" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Silver</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <ul class="timeline-text">
+                      <li style = "list-style:disc;">Managing Risk Reports Framework</li>
+                      <li style = "list-style:disc;">Py39 Migration Of Project</li>
+                      <li style = "list-style:disc;">TFG Core Activities and trainings for underprivileged students by tying up with NGOs</li>
+                      <li style = "list-style:disc;">Training Coordinator for AI-ML arm of TFG</li>
+                    </ul>                    
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/bronze medal.svg" alt="Bronze" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bronze</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <ul class="timeline-text">
+                      <li style = "list-style:disc;">Won Java Coding Contest</li>
+                      <li style = "list-style:disc;">Won Confluence Competition</li>
+                      <li style = "list-style:disc;">Internal Python Trainings for the Technology Focus Group (TFG)</li>
+                    </ul>	                                       
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/high five.svg" alt="High Five" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>High Five</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <ul class="timeline-text">
+                      <li style = "list-style:disc;">Awarded for regularly participating in and contributing to Events organized by the TFG</li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+<!--
+              <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+-->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <!-- <img src="./assets/images/icon-quote.svg" alt="quote icon"> -->
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <!--<time datetime="2021-06-14">14 June, 2021</time>-->
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Certifications</h3>
+
+          <ul class="clients-list has-scrollbar">
+          <style>
+            .image-preview {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 9999;
+              padding: 20px;
+              background-color: #CEB15A;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+              max-width: 600px;
+              max-height: 600px;
+            }
+            .close-btn {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              cursor: pointer;
+            }
+            #preview-image {
+              max-width: 500px;
+              max-height: 500px;
+            }
+          </style>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/PCAP.jpg" alt="PCAP" onclick="showImagepreview('./assets/images/Certificates/PCAP.jpg')">
+              <p class="timeline-text" style = "text-align:center;">Certified Associate in Python Programming</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/MTA.jpg" onclick="showImagepreview('./assets/images/Certificates/MTA.jpg')" alt="MTA">
+              <p class="timeline-text" style = "text-align:center;">Introduction To Java</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/OCI Foundations.jpg" onclick="showImagepreview('./assets/images/Certificates/OCI Foundations.jpg')" alt="OCI Foundations">
+              <p class="timeline-text" style = "text-align:center;">OCI Foundations</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/ISTQB Foundations.jpg" onclick="showImagepreview('./assets/images/Certificates/ISTQB Foundations.jpg')" alt="ISTQB Foundations">
+              <p class="timeline-text" style = "text-align:center;">ISTQB Foundations Tester</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/OCI AI.jpg" onclick="showImagepreview('./assets/images/Certificates/OCI AI.jpg')" alt="OCI AI">
+              <p class="timeline-text" style = "text-align:center;">OCI AI Foundations</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Agile Tester.jpg" onclick="showImagepreview('./assets/images/Certificates/Agile Tester.jpg')" alt="Agile tester">
+              <p class="timeline-text" style = "text-align:center;">ISTQB Agile Tester</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Safe 5.jpg" onclick="showImagepreview('./assets/images/Certificates/Safe 5.jpg')" alt="Safe 5">
+              <p class="timeline-text" style = "text-align:center;">SAFe 5 Scrum Master</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Investment Management Spec.jpg" onclick="showImagepreview('./assets/images/Certificates/Investment Management Spec.jpg')" alt="Investment Management Specialization">
+              <p class="timeline-text" style = "text-align:center;">Investment Management using Python and ML - Specialization</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Deep Learning Spec.jpg" onclick="showImagepreview('./assets/images/Certificates/Deep Learning Spec.jpg')" alt="Deep Learning Specialization">
+              <p class="timeline-text" style = "text-align:center;">Deep Learning - Specialization</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Excel Spec.jpg" onclick="showImagepreview('./assets/images/Certificates/Excel Spec.jpg')" alt="Excel Specialization">
+              <p class="timeline-text" style = "text-align:center;">Excel For Business - Specialization</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/AWS ML.jpg" onclick="showImagepreview('./assets/images/Certificates/AWS ML.jpg')" alt="AWS ML">
+              <p class="timeline-text" style = "text-align:center;">AWS for Machine Learning</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Computer Vision Basics.jpg" onclick="showImagepreview('./assets/images/Certificates/Computer Vision Basics.jpg')" alt="Computer Vision Basics">
+              <p class="timeline-text" style = "text-align:center;">Computer Vision Basics</p>
+            </li>
+
+            <li class="clients-item">
+                <img src="./assets/images/Certificates/Data Science Math.jpg" onclick="showImagepreview('./assets/images/Certificates/Data Science Math.jpg')" alt="Data Science Math">
+              <p class="timeline-text" style = "text-align:center;">Data Science Math Skills</p>
+            </li>
+
+          <li class="clients-item">
+              <img src="./assets/images/Certificates/ML Foundations.jpg" onclick="showImagepreview('./assets/images/Certificates/ML Foundations.jpg')" alt="ML Foundations">
+            <p class="timeline-text" style = "text-align:center;">ML Foundations</p>
+          </li>
+
+            <!-- <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li> -->
+
+          </ul>
+        
+          <div class = "image-preview" id = "image-preview">
+            <span class = "close-btn" onclick="hideImagePreview()"><b>X</b></span>
+            <img src = "" alt = "Preview Image" id = "preview-image" />
+          </div>
+          <script>
+            function showImagepreview(imageSrc) {
+              const previewImage = document.getElementById('preview-image');
+              previewImage.src = imageSrc;
+              const imagePreview = document.getElementById('image-preview');
+              imagePreview.style.display = 'block';
+            }
+            function hideImagePreview() {
+              const imagePreview = document.getElementById('image-preview');
+              imagePreview.style.display = 'none';
+            }
+          </script>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical Analyst - Data Science @ Coforge Ltd.</h4>
+
+              <span>04/2024 — Present</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li style = "list-style:disc;" class="timeline-text">Tech Stack: Amazon SageMaker, Aurora, RDS, S3, Lambda, Hugging Face Transformers, SQL, Beautiful Soup, Data Analysis/Machine Learning Libraries (Pandas, Numpy, Sklearn, Matplotlib, Seaborn etc.)</li>
+                  <li style = "list-style:disc;" class="timeline-text">Leveraging GenAI techniques to create synthetic data and enhance training datasets.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Performing data preprocessing, EDA, feature engineering and model training/evaluation for sentiment analysis (BERT),  classification, GenAI based Email generation models.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Designing and implementing APIs to deploy the ML models and collaborating cross-functionally with Data, Appian teams to integrate the models.</li>
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer 1A @ Bank Of America</h4>
+
+              <span>02/2022 — 04/2024</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li style = "list-style:disc;" class="timeline-text">Tech Stack: Python Frameworks (Quartz, Flask), SQL, Sandra (OODB), AMPS, Machine Learning Libraries (Pandas, Numpy, Sklearn), Rasa</li>
+                  <li style = "list-style:disc;" class="timeline-text">Good work experience in designing, testing, maintaining and enhancing capabilities of Risk Manager and Mortgage Analytics Platform for Mortgage Backed Securities using Python Frameworks and leveraging Data Science techniques in an Agile Team.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Contributed to build Chatbot for Global Markets Traders, using NLP (Spacy, Rasa) to provide answers on a wide array of topics, ranging from the day’s Trade volumes to the status of a Prod Incident, hence speeding up Information retrieval.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Worked on Incremental Default Risk Calculation using Regression algorithms and Stress Scenario Testing.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Contributed to build APIs for LiveMarketTracker application. </li>
+                  <li style = "list-style:disc;" class="timeline-text">Set up Recons and Data quality checks for Desk reports to alert about the issues beforehand and raise flags, thus streamlining the process of Report delivery to Traders and minimizing Incidents.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Worked on project source code (py38 to py39), Global Derivative Analytics (GDA) library and Base Curve (SOFR) migration while resolving any issues arising thereof.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Implemented RM Utility Tool to clear cache for selected desks to manage overnight desk runs.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Developed a solution to read Asset IDs of various types of MBS and retrieve corresponding Instrument Hashes to be used by Support Team.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Worked to build a fast and optimized system that deals with same-signage of Risk Measures for a variety of Instruments in a fault-tolerant manner.</li>
+                  <li style = "list-style:disc;" class="timeline-text"><b>Achievements:</b> Enhanced Report loaders by refining the data storage process, in-turn facilitating about 40% improvement in performance. Optimized overnight Desk Report runs, thereby cutting down the runtime by around 60%.</li>
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quality Specialist 1B @ Bank Of America</h4>
+
+              <span>07/2020 — 02/2022</span>
+
+              <p class="timeline-text">
+                <ul>
+                  <li style = "list-style:disc;" class="timeline-text">Tech Stack: Cucumber (Gherkin) and Selenium, Java, Python</li>
+                  <li style = "list-style:disc;" class="timeline-text">Worked on Designing, Testing, Maintaining Automation Tests using a Cucumber and Selenium based Framework (RAFT) for Insight Platform (used by Investment Bankers).</li>
+                  <li style = "list-style:disc;" class="timeline-text">Monitored QA runs of Application and escalated as appropriate.</li>
+                  <li style = "list-style:disc;" class="timeline-text">Involved in story creation (task, bug, sub-task etc.) – tracking and updating the same. Actively attended Story pointing, daily stand-up, retrospective calls as part of Agile process.</li>
+                </ul>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chandigarh University</h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                Bachelor Of Engineering - Computer Science and Engineering (Spec. in AI-ML) | <b>8.86 CGPA</b>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">D.A.V. Public School</h4>
+
+              <span>2014 — 2015</span>
+
+              <p class="timeline-text">
+                12th (HSC) | <b>82.2%</b>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">D.A.V. Public School</h4>
+
+              <span>2012 — 2013</span>
+
+              <p class="timeline-text">
+                10th (SSC) | <b>10 CGPA</b>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning, NLP, Deep Learning, GenAI, Web Scraping</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Amazon AWS (EC2, S3, RDS, SageMaker, Lambda etc.)</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flask</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PyMongo</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Science</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li> -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Science</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li> -->
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="data science">
+              <a href="https://github.com/grvshrm/EmployeeAttrition">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="Employee Attrition" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Employee Attrition</h3>
+
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/grvshrm/SocialMediaAPI">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="Social Media App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Social Media App</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data science">
+              <a href="https://github.com/grvshrm/Spam-Detector-Heroku">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Spam Detector" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Spam Detector</h3>
+
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data science">
+              <a href="https://github.com/grvshrm/Salary-Predictor-Heroku">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Salary Predictor" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Salary Predictor</h3>
+
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/grvshrm/Fixed-Fortune">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="Fixed Fortune Streamlit" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fixed Fortune Streamlit</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data science">
+              <a href="https://github.com/grvshrm/Self-Driving-Car">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="Self Driving Car" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Self Driving Car</h3>
+
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data science">
+              <a href="https://github.com/grvshrm/Twitter-Sentiment-Analysis">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="Twitter Sentiment Analysis" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Twitter Sentiment Analysis</h3>
+
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/grvshrm/RTStockTracker">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="Real Time Stock Tracker" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Real Time Stock Tracker</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!-- <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article> -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
