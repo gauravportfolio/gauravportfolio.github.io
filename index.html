@@ -482,10 +482,81 @@
         <section class="clients">
 
           <h3 class="h3 clients-title">Certifications</h3>
+          <style>
+            .image-thumbnail {
+            width: 150px;
+            height: 120px;
+            cursor: pointer;
+            }
+
+            .preview-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            overflow: auto;
+            }
+
+            .preview-content {
+            background-color: #CEB15A;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+            }
+
+            .preview-content img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border: 2px solid black;
+            }
+
+            .close-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: var(--onyx);
+            color: var(--white-2);
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+            opacity: 0.7;
+            }
+            .close-button:hover,
+            .close-button:focus { opacity: 1; }
+
+            .close-button ion-icon { --ionicon-stroke-width: 50px; }
+
+            @media (min-width: 1200px) {
+              .preview-content {
+                max-width: 700px;
+                max-height: 600px;
+              }
+            }
+          </style>
 
           <ul class="clients-list has-scrollbar">
-          <style>
-            .image-preview {
+            
+          <!-- <style>
+            /* .image-preview {
               display: none;
               position: fixed;
               top: 50%;
@@ -507,76 +578,76 @@
             #preview-image {
               max-width: 500px;
               max-height: 500px;
-            }
+            } */ -->
           </style>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/PCAP.jpg" alt="PCAP" onclick="showImagepreview('./assets/images/Certificates/PCAP.jpg')">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/PCAP.jpg" alt="PCAP">
               <p class="timeline-text" style = "text-align:center;">Certified Associate in Python Programming</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/MTA.jpg" onclick="showImagepreview('./assets/images/Certificates/MTA.jpg')" alt="MTA">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/MTA.jpg" alt="MTA">
               <p class="timeline-text" style = "text-align:center;">Introduction To Java</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/OCI Foundations.jpg" onclick="showImagepreview('./assets/images/Certificates/OCI Foundations.jpg')" alt="OCI Foundations">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/OCI Foundations.jpg" alt="OCI Foundations">
               <p class="timeline-text" style = "text-align:center;">OCI Foundations</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/ISTQB Foundations.jpg" onclick="showImagepreview('./assets/images/Certificates/ISTQB Foundations.jpg')" alt="ISTQB Foundations">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/ISTQB Foundations.jpg" alt="ISTQB Foundations">
               <p class="timeline-text" style = "text-align:center;">ISTQB Foundations Tester</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/OCI AI.jpg" onclick="showImagepreview('./assets/images/Certificates/OCI AI.jpg')" alt="OCI AI">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/OCI AI.jpg" alt="OCI AI">
               <p class="timeline-text" style = "text-align:center;">OCI AI Foundations</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Agile Tester.jpg" onclick="showImagepreview('./assets/images/Certificates/Agile Tester.jpg')" alt="Agile tester">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Agile Tester.jpg" alt="Agile tester">
               <p class="timeline-text" style = "text-align:center;">ISTQB Agile Tester</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Safe 5.jpg" onclick="showImagepreview('./assets/images/Certificates/Safe 5.jpg')" alt="Safe 5">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Safe 5.jpg" alt="Safe 5">
               <p class="timeline-text" style = "text-align:center;">SAFe 5 Scrum Master</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Investment Management Spec.jpg" onclick="showImagepreview('./assets/images/Certificates/Investment Management Spec.jpg')" alt="Investment Management Specialization">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Investment Management Spec.jpg" alt="Investment Management Specialization">
               <p class="timeline-text" style = "text-align:center;">Investment Management using Python and ML - Specialization</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Deep Learning Spec.jpg" onclick="showImagepreview('./assets/images/Certificates/Deep Learning Spec.jpg')" alt="Deep Learning Specialization">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Deep Learning Spec.jpg" alt="Deep Learning Specialization">
               <p class="timeline-text" style = "text-align:center;">Deep Learning - Specialization</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Excel Spec.jpg" onclick="showImagepreview('./assets/images/Certificates/Excel Spec.jpg')" alt="Excel Specialization">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Excel Spec.jpg" alt="Excel Specialization">
               <p class="timeline-text" style = "text-align:center;">Excel For Business - Specialization</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/AWS ML.jpg" onclick="showImagepreview('./assets/images/Certificates/AWS ML.jpg')" alt="AWS ML">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/AWS ML.jpg" alt="AWS ML">
               <p class="timeline-text" style = "text-align:center;">AWS for Machine Learning</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Computer Vision Basics.jpg" onclick="showImagepreview('./assets/images/Certificates/Computer Vision Basics.jpg')" alt="Computer Vision Basics">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Computer Vision Basics.jpg" alt="Computer Vision Basics">
               <p class="timeline-text" style = "text-align:center;">Computer Vision Basics</p>
             </li>
 
             <li class="clients-item">
-                <img src="./assets/images/Certificates/Data Science Math.jpg" onclick="showImagepreview('./assets/images/Certificates/Data Science Math.jpg')" alt="Data Science Math">
+                <img class = "image-thumbnail" src="./assets/images/Certificates/Data Science Math.jpg" alt="Data Science Math">
               <p class="timeline-text" style = "text-align:center;">Data Science Math Skills</p>
             </li>
 
           <li class="clients-item">
-              <img src="./assets/images/Certificates/ML Foundations.jpg" onclick="showImagepreview('./assets/images/Certificates/ML Foundations.jpg')" alt="ML Foundations">
+              <img class = "image-thumbnail" src="./assets/images/Certificates/ML Foundations.jpg" alt="ML Foundations">
             <p class="timeline-text" style = "text-align:center;">ML Foundations</p>
           </li>
 
@@ -617,8 +688,36 @@
             </li> -->
 
           </ul>
-        
-          <div class = "image-preview" id = "image-preview">
+          <div id="preview-container" class="preview-container">
+            <div class="preview-content">
+              <img id="preview-image" src="" alt="Preview Image">
+              <div class="close-button">×</div>
+            </div>
+          </div>
+          <script>
+          const imageThumbnails = document.querySelectorAll('.image-thumbnail');
+          const previewContainer = document.getElementById('preview-container');
+          const previewImage = document.getElementById('preview-image');
+          const closeButton = document.querySelector('.close-button');
+
+          imageThumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+              previewImage.src = thumbnail.src;
+              previewContainer.style.display = 'flex';
+            });
+          });
+
+          closeButton.addEventListener('click', () => {
+            previewContainer.style.display = 'none';
+          });
+
+          previewContainer.addEventListener('click', (event) => {
+            if (event.target === previewContainer) {
+              previewContainer.style.display = 'none';
+            }
+          });
+            </script>
+          <!-- <div class = "image-preview" id = "image-preview">
             <span class = "close-btn" onclick="hideImagePreview()"><b>X</b></span>
             <img src = "" alt = "Preview Image" id = "preview-image" />
           </div>
@@ -633,7 +732,7 @@
               const imagePreview = document.getElementById('image-preview');
               imagePreview.style.display = 'none';
             }
-          </script>
+          </script> -->
 
         </section>
 
@@ -1379,11 +1478,6 @@
     </div>
 
   </main>
-
-
-
-
-
 
   <!--
     - custom js link
